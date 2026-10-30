@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Charla 25N · Mujeres Curri</title>
+<meta name="description" content="La anticoncepción de emergencia en el continuo de las violencias contra las mujeres. Dra. Andrea Cuenca Botey. Jueves 19 de noviembre, 7:00 p. m., por Zoom.">
+<meta property="og:title" content="Mujeres Curri invita · Charla 25N">
+<meta property="og:description" content="La anticoncepción de emergencia en el continuo de las violencias contra las mujeres · Jueves 19 de noviembre, 7:00 p. m. · Zoom">
+<meta property="og:image" content="invitacion.jpg">
+<meta name="theme-color" content="#2a0f3d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Nunito+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+  /* Cartel de lucha: la gata del afiche como portada, trazos de brocha amarillos, dos pasos claros (inscribirse y entrar). */
+  :root{
+    color-scheme:dark;
+    --noche:#1f0a2e;
+    --morado:#3d1658;
+    --morado-vivo:#5a2382;
+    --lila:#c9a8e8;
+    --amarillo:#f7c81e;
+    --crema:#fbf3e4;
+    --tinta:#1e0b2c;
+    --display:"Anton","Impact","Arial Narrow Bold",sans-serif;
+    --mano:"Caveat Brush","Comic Sans MS",cursive;
+    --texto:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  body{margin:0;font-family:var(--texto);font-size:16px;line-height:1.55;color:var(--crema);background:var(--noche)}
+  img{max-width:100%;display:block}
+  .gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .inner{max-width:1080px;margin:0 auto}
+
+  /* ---------- Portada ---------- */
+  .hero{position:relative;overflow:hidden;
+        background:
+          radial-gradient(120% 70% at 50% 0%, var(--morado-vivo) 0%, transparent 60%),
+          linear-gradient(180deg,var(--morado) 0%,var(--noche) 100%)}
+  .hero-art{position:relative;max-width:1080px;margin:0 auto}
+  .hero-art img{width:100%;aspect-ratio:720/318;object-fit:cover;
+        -webkit-mask-image:radial-gradient(ellipse 75% 100% at 50% 20%,#000 55%,transparent 100%);
+                mask-image:radial-gradient(ellipse 75% 100% at 50% 20%,#000 55%,transparent 100%)}
+  .hero-text{position:relative;margin-top:-10%;padding-block:0 40px;text-align:center}
+  .brocha{display:inline-block;background:var(--amarillo);color:var(--tinta);font-family:var(--display);
+          font-size:clamp(26px,5vw,44px);letter-spacing:1px;text-transform:uppercase;line-height:1;
+          padding:12px 28px 10px;transform:rotate(-2deg);
+          clip-path:polygon(2% 14%,10% 4%,30% 9%,55% 2%,78% 8%,97% 3%,100% 40%,98% 88%,80% 96%,52% 91%,28% 99%,6% 93%,0 60%)}
+  .marco{margin:18px auto 0;max-width:560px;font-weight:800;color:var(--lila);font-size:15px;letter-spacing:.3px}
+  .marco strong{display:block;color:var(--crema);font-size:17px;text-transform:uppercase;letter-spacing:1.5px}
+  h1{font-family:var(--display);font-weight:400;line-height:1.05;
+     font-size:clamp(42px,8.5vw,92px);margin:22px auto 0;max-width:15ch;text-wrap:balance}
+  h1 .resalta{display:inline-block;background:var(--amarillo);color:var(--tinta);padding:0 .18em;margin-top:.08em;transform:rotate(-1.5deg);
+     clip-path:polygon(0 8%,12% 0,40% 6%,70% 0,100% 5%,98% 92%,70% 100%,36% 94%,8% 100%,1% 70%)}
+  .sub-h1{display:block;font-weight:900;font-size:clamp(20px,3.2vw,30px);line-height:1.2;
+          margin:16px auto 0;max-width:24ch;text-wrap:balance}
+
+  /* ---------- Ficha de la charla ---------- */
+  .ficha{background:var(--noche);padding-block:8px}
+  .datos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:860px;margin:0 auto}
+  @media (max-width:680px){.datos{grid-template-columns:1fr;max-width:420px}}
+  .dato{display:flex;align-items:center;gap:14px;background:var(--crema);color:var(--tinta);
+        border-radius:999px;padding:12px 20px 12px 12px}
+  .dato .ico{flex:none;width:44px;height:44px;border-radius:50%;background:var(--tinta);color:var(--amarillo);display:grid;place-items:center}
+  .dato .ico svg{width:22px;height:22px}
+  .dato b{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.3px;line-height:1.1}
+  .dato span{font-size:13px;font-weight:700;color:#5b4a68}
+  .ponente{max-width:860px;margin:26px auto 0;text-align:center;background:var(--lila);color:var(--tinta);
+           padding:16px 24px 14px;transform:rotate(-.6deg);
+           clip-path:polygon(1% 10%,20% 2%,50% 7%,80% 1%,99% 8%,100% 85%,78% 98%,46% 92%,18% 99%,0 88%)}
+  .ponente .quien{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:2px}
+  .ponente .nombre{font-family:var(--display);font-size:clamp(28px,4.4vw,40px);line-height:1.1;letter-spacing:.5px}
+  .ponente .rol{font-weight:800;font-size:16px}
+
+  /* ---------- Pasos ---------- */
+  .pasos{padding-block:48px 24px}
+  .pasos-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px;align-items:start}
+  @media (max-width:860px){.pasos-grid{grid-template-columns:1fr}}
+  .paso{background:var(--crema);color:var(--tinta);border-radius:22px;padding:24px 22px;box-shadow:0 22px 50px rgba(0,0,0,.45)}
+  .paso-head{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .num{flex:none;width:46px;height:46px;border-radius:50%;background:var(--amarillo);color:var(--tinta);
+       font-family:var(--display);font-size:26px;display:grid;place-items:center;transform:rotate(-6deg)}
+  .paso h2{margin:0;font-family:var(--display);font-weight:400;font-size:30px;letter-spacing:.5px;line-height:1.1}
+  .paso p{margin:6px 0 16px;color:#4f3e5c}
+  .form-embed{border-radius:14px;overflow:hidden;border:2px solid #dccbea;background:#fff}
+  .form-embed iframe{display:block;width:100%;height:1000px;border:0}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:12px;
+       padding:15px 18px;border-radius:14px;text-decoration:none;font-family:var(--display);font-size:20px;letter-spacing:.6px;
+       transition:transform .15s ease, background-color .15s ease}
+  .btn svg{width:22px;height:22px;flex:none}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:focus-visible,.link-sec:focus-visible{outline:3px solid var(--amarillo);outline-offset:3px}
+  .btn.amarillo{background:var(--amarillo);color:var(--tinta);font-size:22px;padding:18px}
+  .btn.amarillo:hover{background:#ffd640}
+  .link-sec{display:block;text-align:center;font-size:14px;font-weight:800;color:var(--morado-vivo);margin-top:12px}
+  .paso.zoom{background:linear-gradient(160deg,var(--morado-vivo),var(--morado));color:var(--crema);
+             border:2px solid rgba(247,200,30,.5)}
+  .col-der{display:grid;gap:24px}
+  @media (min-width:861px){.col-der{position:sticky;top:16px}}
+  .paso.bio{background:var(--lila);color:var(--tinta)}
+  .paso.bio .eti{margin:0;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:2px;color:var(--morado)}
+  .paso.bio h2{font-size:28px;margin:4px 0 8px}
+  .paso.bio p{color:var(--tinta);margin:0 0 10px}
+  .paso.bio p:last-child{margin:0}
+  .paso.zoom p{color:var(--lila)}
+  .paso.zoom .fecha{font-family:var(--display);font-size:24px;color:var(--amarillo);letter-spacing:.4px;margin:4px 0 2px}
+  .btn.claro{background:transparent;color:var(--crema);border:2px solid rgba(251,243,228,.55)}
+  .btn.claro:hover{background:rgba(251,243,228,.08)}
+
+  /* ---------- Lema y compartir ---------- */
+  .lema-sec{padding-block:32px 40px;text-align:center}
+  .lema{display:inline-block;font-family:var(--mano);font-size:clamp(30px,5.5vw,52px);line-height:1.15;color:var(--tinta);
+        background:var(--amarillo);padding:10px 30px 14px;transform:rotate(-1.5deg);max-width:100%;
+        clip-path:polygon(2% 12%,22% 3%,48% 9%,75% 1%,98% 7%,100% 52%,97% 92%,70% 97%,40% 92%,12% 100%,0 70%)}
+  .voz{margin:14px 0 0;font-weight:800;color:var(--lila);letter-spacing:.4px}
+  .compartir{padding-block:16px 48px}
+  .compartir-grid{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:center;max-width:760px;margin:0 auto;
+                  background:rgba(251,243,228,.06);border:1px solid rgba(251,243,228,.15);border-radius:22px;padding:22px}
+  @media (max-width:600px){.compartir-grid{grid-template-columns:1fr;text-align:center}}
+  .compartir-grid img{width:200px;margin:0 auto;border-radius:12px;box-shadow:0 14px 30px rgba(0,0,0,.4)}
+  .compartir h3{font-family:var(--display);font-weight:400;font-size:28px;margin:0 0 6px;letter-spacing:.5px}
+  .compartir p{margin:0 0 6px;color:var(--lila)}
+  .compartir .btn{font-size:18px}
+  .btn.whatsapp{background:#1fa855;color:#fff}
+  .btn.whatsapp:hover{background:#178a45}
+
+  footer{background:#170722;padding-block:28px 32px;text-align:center}
+  footer img{width:300px;margin:0 auto 10px;border-radius:10px}
+  footer p{margin:0;font-size:13px;color:var(--lila)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-art">
+    <img src="gata.jpg" alt="Ilustración de la gata de Mujeres Curri con pañoleta amarilla del Frente Amplio y el símbolo de mujer">
+  </div>
+  <div class="hero-text gutter">
+    <span class="brocha">Mujeres Curri invita</span>
+    <p class="marco"><strong>En el marco del 25 de noviembre</strong>Por la erradicación de la violencia contra las mujeres</p>
+    <h1>La anticoncepción <span class="resalta">de emergencia</span></h1>
+    <span class="sub-h1">en el continuo de las violencias contra las mujeres</span>
+  </div>
+</header>
+
+<section class="ficha gutter" aria-label="Datos de la charla">
+  <div class="datos">
+    <div class="dato">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span>
+      <div><b>Jueves 19 de noviembre</b><span>2026</span></div>
+    </div>
+    <div class="dato">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <div><b>7:00 p. m.</b><span>Hora de Costa Rica</span></div>
+    </div>
+    <div class="dato">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg></span>
+      <div><b>Virtual por Zoom</b><span>Desde donde estés</span></div>
+    </div>
+  </div>
+  <div class="ponente">
+    <div class="quien">Expositora</div>
+    <div class="nombre">Dra. Andrea Cuenca Botey</div>
+    <div class="rol">Psicóloga social</div>
+  </div>
+</section>
+
+<main class="pasos gutter">
+  <div class="inner pasos-grid">
+    <section class="paso" id="inscripcion">
+      <div class="paso-head"><span class="num">1</span><h2>Inscribite</h2></div>
+      <p>Llená el formulario. Te toma un minuto.</p>
+      <div class="form-embed">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdu4ini4gDNas2JuZL3oyOgcXe0zaIPP1ROG13BaP1BYZ9-IQ/viewform?embedded=true" title="Formulario de inscripción" loading="lazy">Cargando…</iframe>
+      </div>
+      <a class="link-sec" href="https://docs.google.com/forms/d/e/1FAIpQLSdu4ini4gDNas2JuZL3oyOgcXe0zaIPP1ROG13BaP1BYZ9-IQ/viewform" target="_blank" rel="noopener">¿No ves el formulario? Abrilo aquí</a>
+    </section>
+
+    <div class="col-der">
+    <section class="paso bio" id="expositora">
+      <p class="eti">Sobre la expositora</p>
+      <h2>Dra. Andrea Cuenca Botey</h2>
+      <p>Psicóloga graduada de la Universidad de Costa Rica, con una maestría en Pedagogía con énfasis en atención a la diversidad de la Universidad Nacional y formación en estudios de género.</p>
+      <p>Desde hace más de una década trabaja como psicoterapeuta con perspectiva de género y es profesora de la Escuela de Ciencias Sociales y Humanidades de la UNED.</p>
+    </section>
+
+    <section class="paso zoom" id="zoom">
+      <div class="paso-head"><span class="num">2</span><h2>El día de la charla</h2></div>
+      <div class="fecha">Jueves 19 · 7:00 p. m.</div>
+      <p>Volvé a esta página y entrá unos minutos antes.</p>
+      <a class="btn amarillo" href="https://us06web.zoom.us/j/8687741844?pwd=NG9JY2EvNkNOMHczVnYyQ2xOdm8zQT09" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg>
+        Entrar a la charla por Zoom</a>
+      <a class="btn claro" target="_blank" rel="noopener"
+         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Charla%2025N%20%C2%B7%20Mujeres%20Curri&dates=20261120T010000Z/20261120T023000Z&details=La%20anticoncepci%C3%B3n%20de%20emergencia%20en%20el%20continuo%20de%20las%20violencias%20contra%20las%20mujeres%20%C2%B7%20Dra.%20Andrea%20Cuenca%20Botey%0AZoom%3A%20https%3A%2F%2Fus06web.zoom.us%2Fj%2F8687741844%3Fpwd%3DNG9JY2EvNkNOMHczVnYyQ2xOdm8zQT09&location=Zoom">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M12 13v5M9.5 15.5h5"/></svg>
+        Agregar a mi calendario</a>
+    </section>
+    </div>
+  </div>
+</main>
+
+<section class="lema-sec gutter">
+  <span class="lema">Por nuestro derecho a decidir y a vivir sin violencias.</span>
+  <p class="voz">Participá. Tu voz también cuenta.</p>
+</section>
+
+<section class="compartir gutter">
+  <div class="compartir-grid">
+    <img src="invitacion.jpg" alt="Afiche de la charla">
+    <div>
+      <h3>Compartí la invitación</h3>
+      <p>Invitá a tus amigas, compañeras y vecinas.</p>
+      <a class="btn whatsapp" id="wa" target="_blank" rel="noopener" href="https://wa.me/?text=Te%20invito%20a%20la%20charla%20de%20Mujeres%20Curri%3A%20La%20anticoncepci%C3%B3n%20de%20emergencia%20en%20el%20continuo%20de%20las%20violencias%20contra%20las%20mujeres.%20Jueves%2019%20de%20noviembre%2C%207%3A00%20p.%20m.%2C%20por%20Zoom.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+        Compartir por WhatsApp</a>
+      <a class="btn claro" href="invitacion.jpg" download="Invitacion-Charla-25N-Mujeres-Curri.jpg">Descargar la invitación</a>
+    </div>
+  </div>
+</section>
+
+<footer class="gutter">
+  <img src="logos.jpg" alt="Mujeres Curri y Secretaría de las Mujeres del Frente Amplio">
+  <p>Mujeres Curri · Secretaría de las Mujeres · Frente Amplio</p>
+</footer>
+
+<script>
+  // Agrega el enlace de esta página al mensaje de WhatsApp.
+  (function(){
+    var a=document.getElementById('wa'); if(!a) return;
+    if(location.protocol.indexOf('http')===0){ a.href += encodeURIComponent(' Inscribite aquí: ' + location.href.split('#')[0]); }
+  })();
+</script>
+</body>
+</html>
